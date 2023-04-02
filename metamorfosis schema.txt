@@ -1,0 +1,9 @@
+Room         name:string
+Specialty    name:string
+Professional name:string specialties:references issue_note:boolean monthly_value:float base_value:float health_plan_multiplier:float room_rent:float color:string day_off:string
+Parent 	     name:string phone:string
+Patient      name:string conditions:string age:integer parents:references fav_hour:string fav_weekday:string
+
+Appointment  patient:reference professional:reference specialty:reference room:reference scheduled_date:datetime performed_date:datetime performed:boolean value:float should_issue_note:boolean issued_note:boolean 
+
+Contract     appointments:references start_date:date final_date:date frequency:string value:float fav_hour:string fav_weekday:string
